@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>String transformers</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" type="module"></script>
+  </head>
+  <body class="h-screen flex items-center justify-center overflow-hidden">
+    <div class="container text-center max-w-screen-sm mx-auto p-12">
+      <form class="mb-6">
+        <label class="inline-block text-sm text-gray-700 !text-left w-full">Add a input here</label>
+        <input
+          type="text"
+          id="userInput"
+          autocomplete="off"
+          placeholder="enter the sentence with spaces (alphanumeric)"
+          value="this is a normal sentence to transform"
+          class="px-3 py-2 outline-none border border-solid border-blue-400 rounded-sm w-full"
+        />
+      </form>
+
+      <div class="transformers overflow-y-auto" style="height: calc(100vh - 150px)">
+        <div class="mb-3 border border-solid border-gray-300 p-1 rounded-sm">
+          <label class="block font-semibold">------- Lower Case ------</label>
+          <span id="lowercase" class="bg-gray-200 p-1 rounded block"></span>
+        </div>
+        <div class="mb-3 border border-solid border-gray-300 p-1 rounded-sm">
+          <label class="block font-semibold">------- Upper Case ------</label>
+          <span id="uppercase" class="bg-sky-200 p-1 rounded block"></span>
+        </div>
+        <div class="mb-3 border border-solid border-gray-300 p-1 rounded-sm">
+          <label class="block font-semibold">------- Camel Case ------</label>
+          <span id="camelcase" class="bg-red-200 p-1 rounded block"></span>
+        </div>
+        <div class="mb-3 border border-solid border-gray-300 p-1 rounded-sm">
+          <label class="block font-semibold">------- Pascal Case ------</label>
+          <span id="pascalcase" class="bg-pink-200 p-1 rounded block"></span>
+        </div>
+        <div class="mb-3 border border-solid border-gray-300 p-1 rounded-sm">
+          <label class="block font-semibold">------- Snake Case ------</label>
+          <span id="snakecase" class="bg-yellow-200 p-1 rounded block"></span>
+        </div>
+        <div class="mb-3 border border-solid border-gray-300 p-1 rounded-sm">
+          <label class="block font-semibold">------- Kebab Case ------</label>
+          <span id="kebabcase" class="bg-green-200 p-1 rounded block"></span>
+        </div>
+        <div class="mb-3 border border-solid border-gray-300 p-1 rounded-sm">
+          <label class="block font-semibold">------- Trim ------</label>
+          <span id="trim" class="bg-purple-200 p-1 rounded block"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
