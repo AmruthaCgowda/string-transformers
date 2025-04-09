@@ -2,7 +2,7 @@
 
 A collection of utility functions to transform strings for various use cases, such as formatting, case conversion, and cleaning input data.
 
-🌐 **Live Demo**: [String Transformers](https://amruthacgowda.github.io/string-transformers)
+🌐 **Live Demo**: [String Transformers](https://amruthacgowda.github.io/string-transformers){:target="_blank"}
 
 ## ✨ Features
 
